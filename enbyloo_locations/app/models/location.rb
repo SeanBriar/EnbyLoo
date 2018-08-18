@@ -41,7 +41,7 @@ class Location
     results = DB.exec(
       <<-SQL
         INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness)
-        VALUES ('#{opts["name"]}', '#{opts["address"]}', '#{opts["city"]}', '#{opts["state"]}', '#{opts[directions]}', #{opts["ada"]}, #{opts["cleanliness"]}, #{opts["staff_friendliness"]})
+        VALUES ('#{opts["name"]}', '#{opts["address"]}', '#{opts["city"]}', '#{opts["state"]}', '#{opts["directions"]}', #{opts["ada"]}, #{opts["cleanliness"]}, #{opts["staff_friendliness"]})
         RETURNING id, name, address, city, state, directions, ada, cleanliness, staff_friendliness;
       SQL
     )
@@ -56,8 +56,13 @@ class Location
       "cleanliness" => results.first["cleanliness"].to_i,
       "staff_friendliness" => results.first["staff_friendliness"].to_i,
     }
-
   end
 
+  def self.delete(id)
+    results = DB.exec("DELETE FROM locations WHERE id=#{id}")
+    return {
+      "deleted" => true
+    }
+  end
 
 end
