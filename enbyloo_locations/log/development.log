@@ -60,3 +60,316 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 43ms (Views: 23.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:06:59 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/location.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:07:13 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 600ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedTable (ERROR:  relation "locations" does not exist
+LINE 2:           FROM locations
+                       ^
+):
+  
+app/models/location.rb:6:in `exec'
+app/models/location.rb:6:in `all'
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:11:35 -0700
+Processing by LocationsController#index as HTML
+Completed 200 OK in 117ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:16:06 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+        "id" => result.["id"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+        "id" => result.["id"].to_i,
+                             ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "name" => result["name"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "address" => result["address"],
+                    ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "city" => result["city"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "state" => result["state"],
+                  ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "directions" => result["directions"],
+                       ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "ada" => result["ada"],
+                ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "cleanliness" => result["cleanliness"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "staff_friendliness" => result["staff_friendliness"].to_i
+                               ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:16:26 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+        "id" => result.["id"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+        "id" => result.["id"].to_i,
+                             ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "name" => result["name"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "address" => result["address"],
+                    ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "city" => result["city"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "state" => result["state"],
+                  ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "directions" => result["directions"],
+                       ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "ada" => result["ada"],
+                ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "cleanliness" => result["cleanliness"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "staff_friendliness" => result["staff_friendliness"].to_i
+                               ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:17:01 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+        "id" => result.["id"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+        "id" => result.["id"].to_i,
+                             ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "name" => result["name"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "address" => result["address"],
+                    ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "city" => result["city"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "state" => result["state"],
+                  ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "directions" => result["directions"],
+                       ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "ada" => result["ada"],
+                ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "cleanliness" => result["cleanliness"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "staff_friendliness" => result["staff_friendliness"].to_i
+                               ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/location.rb:14: syntax error, unexpected '[', expecting '('
+app/models/location.rb:14: syntax error, unexpected ']', expecting keyword_end
+app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:18: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:19: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:20: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:21: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:22: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:23: syntax error, unexpected '}', expecting keyword_end
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:19:14 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:9: syntax error, unexpected '[', expecting '('
+        "id" => result.["id"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:9: syntax error, unexpected ']', expecting keyword_end
+        "id" => result.["id"].to_i,
+                             ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:10: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "name" => result["name"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "address" => result["address"],
+                    ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:12: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "city" => result["city"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:13: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "state" => result["state"],
+                  ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "directions" => result["directions"],
+                       ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "ada" => result["ada"],
+                ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "cleanliness" => result["cleanliness"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "staff_friendliness" => result["staff_friendliness"].to_i
+                               ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:18: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/location.rb:9: syntax error, unexpected '[', expecting '('
+app/models/location.rb:9: syntax error, unexpected ']', expecting keyword_end
+app/models/location.rb:10: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:12: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:13: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:14: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:18: syntax error, unexpected '}', expecting keyword_end
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:21:07 -0700
+Processing by LocationsController#index as HTML
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:9: syntax error, unexpected '[', expecting '('
+        "id" => result.["id"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:9: syntax error, unexpected ']', expecting keyword_end
+        "id" => result.["id"].to_i,
+                             ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:10: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "name" => result["name"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "address" => result["address"],
+                    ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:12: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "city" => result["city"],
+                 ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:13: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "state" => result["state"],
+                  ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:14: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "directions" => result["directions"],
+                       ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "ada" => result["ada"],
+                ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "cleanliness" => result["cleanliness"].to_i,
+                        ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+        "staff_friendliness" => result["staff_friendliness"].to_i,
+                               ^
+/Users/bononeill/Desktop/enbyloo/EnbyLoo/enbyloo_locations/app/models/location.rb:18: syntax error, unexpected '}', expecting '='):
+  
+app/models/location.rb:9: syntax error, unexpected '[', expecting '('
+app/models/location.rb:9: syntax error, unexpected ']', expecting keyword_end
+app/models/location.rb:10: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:12: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:13: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:14: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:15: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:16: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:17: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/models/location.rb:18: syntax error, unexpected '}', expecting '='
+app/controllers/locations_controller.rb:6:in `index'
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:21:33 -0700
+Processing by LocationsController#index as HTML
+Completed 200 OK in 100ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-18 14:23:39 -0700
+Processing by LocationsController#index as HTML
+Completed 200 OK in 56ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2018-08-18 14:23:43 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `exc' for #<PG::Connection:0x00007ff683fc0888>
+Did you mean?  exec):
+  
+app/models/location.rb:25:in `find'
+app/controllers/locations_controller.rb:11:in `show'
+Started GET "/locations/3" for 127.0.0.1 at 2018-08-18 14:23:52 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2018-08-18 14:23:56 -0700
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
