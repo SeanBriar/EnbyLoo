@@ -58,6 +58,7 @@ class Location
     }
   end
 
+  # DELETE
   def self.delete(id)
     results = DB.exec("DELETE FROM locations WHERE id=#{id}")
     return {
@@ -65,4 +66,29 @@ class Location
     }
   end
 
+  # UPDATE
+  def self.update(id, opts)
+    results = DB.exec(
+      <<-SQL
+        UPDATE locations
+        SET name='#{opts["name"]}', address='#{opts["address"]}', city='#{opts["city"]}', state='#{opts["state"]}', directions='#{opts["directions"]}', ada=#{opts["ada"]}, cleanliness=#{opts["cleanliness"]}, staff_friendliness=#{opts["staff_friendliness"]}
+        WHERE id=#{id}
+        RETURNING id, name, address, city, state, directions, ada, cleanliness, staff_friendliness;
+      SQL
+    )
+    return {
+      "id" => results.first["id"].to_i,
+      "name" => results.first["name"],
+      "address" => results.first["address"],
+      "city" => results.first["city"],
+      "state" => results.first["state"],
+      "directions" => results.first["directions"],
+      "ada" => results.first["ada"],
+      "cleanliness" => results.first["cleanliness"].to_i,
+      "staff_friendliness" => results.first["staff_friendliness"].to_i,
+    }
+  end
+
+
+  
 end
