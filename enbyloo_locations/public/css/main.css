@@ -1,0 +1,22 @@
+/* logo text color: d7d7d7 */
+/* logo icon color: 43a88f  */
+/* logo background color: black */
+
+body {
+  margin: 0;
+}
+
+header {
+ background-color: black;
+ margin: 0;
+ height: 150px;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+
+/* CREDITS */
+
+/* Logo created at Wix.com  */
