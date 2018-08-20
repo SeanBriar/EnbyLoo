@@ -1,3 +1,4 @@
+
 $sg-lightgrey:  #d7d7d7;
 $sg-teal: #43a88f;
 
@@ -17,7 +18,7 @@ body {
   position: relative;
 }
 
-/*======= HEADER =======*/
+/*======= HEADER ======= */
 header {
  background-color: black;
  margin: 0;
@@ -29,7 +30,7 @@ header {
   padding-left: 20px;
 }
 
-/*======= NAV =======*/
+/*======= NAV ======= */
 .navBar {
   display: flex;
   justify-content: flex-end;
@@ -120,14 +121,14 @@ main {
 }
 
 
-/*======= MAP =======*/
+
 .map {
   border: 1px solid gold;
   width: 45%;
   height: 500px;
 }
 
-/* ====== footer ====== */
+
 footer {
   position: absolute;
   right: 0;
@@ -147,7 +148,6 @@ footer {
 .enbyHeart {
   height: 20px;
 }
-
 
 
 

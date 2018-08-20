@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   position: relative; }
 
-/*======= HEADER =======*/
+/*======= HEADER ======= */
 header {
   background-color: black;
   margin: 0;
@@ -20,7 +20,7 @@ header {
   padding-top: 15px;
   padding-left: 20px; }
 
-/*======= NAV =======*/
+/*======= NAV ======= */
 .navBar {
   display: flex;
   justify-content: flex-end;
@@ -98,13 +98,11 @@ main {
   width: 45%;
   height: 500px; }
 
-/*======= MAP =======*/
 .map {
   border: 1px solid gold;
   width: 45%;
   height: 500px; }
 
-/* ====== footer ====== */
 footer {
   position: absolute;
   right: 0;
