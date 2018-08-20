@@ -6,7 +6,7 @@ class LocationsList extends React.Component {
         {this.props.locations.map((location, index)=> {
           return (
             <tr>
-            <td onClick={()=> this.props.toggleState('locationsListIsVisible', 'locationIsVisible')}>
+            <td onClick={()=> { this.props.getLocation(location); this.props.toggleState('locationsListIsVisible', 'locationIsVisible')}}>
             {location.name}
             </td>
             <td>

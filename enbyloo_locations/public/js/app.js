@@ -6,9 +6,11 @@ class Locations extends React.Component {
       locationsListIsVisible: true,
       locationIsVisible: false,
       editLocationIsVisible: false,
-      locations: []
+      locations: [],
+      location: {}
     }
     this.toggleState = this.toggleState.bind(this)
+    this.getLocation = this.getLocation.bind(this)
   }
 
   toggleState(st1, st2){
@@ -19,6 +21,16 @@ class Locations extends React.Component {
       })
   }
 
+  // to show one location
+  getLocation(location) {
+    this.setState(
+      {
+        location: location
+      })
+  }
+
+
+  // get data from database
   getLocations() {
     fetch('/locations')
     .then(response => response.json())
@@ -42,9 +54,24 @@ class Locations extends React.Component {
          {this.state.locationsListIsVisible ? <button onClick={()=>this.toggleState('addLocationIsVisible', 'locationsListIsVisible')}>Add a Location</button> : ''}
        </div>
 
-       {this.state.locationsListIsVisible? <LocationsList toggleState={this.toggleState} locations={this.state.locations}/> : ''}
-       {this.state.addLocationIsVisible ? <LocationsForm toggleState={this.toggleState} /> : ''}
-       {this.state.locationIsVisible ? <Location toggleState={this.toggleState} /> : ''}
+       {this.state.locationsListIsVisible ?
+         <LocationsList
+          toggleState={this.toggleState}
+          locations={this.state.locations}
+          getLocation={this.getLocation} />
+        : ''}
+
+       {this.state.addLocationIsVisible ?
+         <LocationsForm
+         toggleState={this.toggleState} />
+        : ''}
+
+       {this.state.locationIsVisible ?
+         <Location
+         toggleState={this.toggleState}
+         location={this.state.location} />
+        : ''}
+
       </div>
     )
   }
