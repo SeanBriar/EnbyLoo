@@ -1,5 +1,7 @@
-const app = angular.module('MyApp', []);
 
-app.controller('MainController', function(){
-  this.hello = 'oh hai!';
-});
+
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('main')
+)
