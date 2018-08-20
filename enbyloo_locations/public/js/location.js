@@ -2,12 +2,13 @@ class Location extends React.Component {
   render() {
     return (
       <div className='locationShow'>
-        <button>See Full List</button>
+        <button onClick={()=> this.props.toggleState('locationsListIsVisible', 'locationIsVisible')}>See Full List</button>
         <div className='indivLocation'>
-          <p>Location Name:</p>
-          <p>Adress, City, State:</p>
-          <p>Cleanliness Rating:</p>
-          <p>Friendliness Rating:</p>
+          <p>Name</p>
+          <p>Adress, City, State</p>
+          <p>Cleanliness Rating</p>
+          <p>Friendliness Rating</p>
+          <p>ADA Complacent</p>
         </div>
         <div className='editBtn'>
           <button>Edit</button>
@@ -15,7 +16,6 @@ class Location extends React.Component {
         <div className='deleteBtn'>
           <button>Delete</button>
         </div>
-        <LocationsForm />
       </div>
     )
   }
