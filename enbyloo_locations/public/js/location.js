@@ -14,7 +14,7 @@ class Location extends React.Component {
           <button>Edit</button>
         </div>
         <div className='deleteBtn'>
-          <button>Delete</button>
+          <button onClick={() => this.props.deleteLocation(location, index)}>Delete</button>
         </div>
       </div>
     )

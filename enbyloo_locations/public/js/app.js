@@ -11,6 +11,7 @@ class Locations extends React.Component {
     }
     this.toggleState = this.toggleState.bind(this)
     this.getLocation = this.getLocation.bind(this)
+    this.deleteLocation = this.deleteLocation.bind(this)
   }
 
   toggleState(st1, st2){
@@ -45,6 +46,20 @@ class Locations extends React.Component {
     this.getLocations()
   }
 
+  deletelocation (location, index) {
+  fetch('locations/' + location.id,
+    {
+      method: 'DELETE'
+    })
+    .then(data => {
+      this.setState({
+        locations: [
+          ...this.state.locations.slice(0, index),
+          ...this.state.locations.slice(index + 1)
+        ]
+      })
+    })
+  }
 
   render() {
     return (
@@ -69,7 +84,8 @@ class Locations extends React.Component {
        {this.state.locationIsVisible ?
          <Location
          toggleState={this.toggleState}
-         location={this.state.location} />
+         location={this.state.location}
+         deleteLocation={this.deleteLocation} />
         : ''}
 
       </div>
