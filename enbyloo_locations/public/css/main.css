@@ -83,7 +83,8 @@ header {
 /* end of dropdown code */
 /*======= MAIN =======*/
 main {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-family: "Source Sans Pro", sans-serif; }
 
 .mainContent {
   display: flex;
@@ -94,16 +95,59 @@ main {
 
 /*======= LOCATIONS =======*/
 .locations {
-  border: 1px solid gold;
   width: 45%;
-  height: 500px;
-  overflow: auto; }
+  height: 600px;
+  -webkit-box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
+  box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
+  border-radius: 3px; }
 
+.listTitle {
+  color: #43a88f;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 3px; }
+
+.addBtn {
+  color: #43a88f;
+  background-color: white;
+  margin-top: 30px;
+  border: none;
+  font-size: 20px; }
+
+.addBtn:hover {
+  font-size: 23px;
+  cursor: pointer; }
+
+.addSearchRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid #d7d7d7; }
+
+#search {
+  width: 200px; }
+
+.locationsTable {
+  overflow: auto;
+  height: 520px; }
+
+.locationName:hover {
+  color: #43a88f;
+  cursor: pointer; }
+
+/* ======= MAP ====== */
 .map {
   border: 1px solid gold;
   width: 45%;
   height: 500px; }
 
+/*==========Footer========*/
 footer {
   position: absolute;
   right: 0;
@@ -122,6 +166,7 @@ footer {
   height: 20px; }
 
 /* CREDITS */
-/* Logo created at Wix.com  */
+/* Logo created at Wix.com */
+/* Box shadow created at https://www.cssmatic.com/box-shadow */
 
 /*# sourceMappingURL=main.css.map */

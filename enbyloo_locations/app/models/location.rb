@@ -38,10 +38,12 @@ class Location
 
   # CREATE
   def self.create(opts)
+    p '===================================================='
+    p opts
     results = DB.exec(
       <<-SQL
         INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness)
-        VALUES ('#{opts["name"]}', '#{opts["address"]}', '#{opts["city"]}', '#{opts["state"]}', '#{opts["directions"]}', #{opts["ada"]}, #{opts["cleanliness"]}, #{opts["staff_friendliness"]})
+        VALUES ('#{opts["name"]}', '#{opts["address"]}', '#{opts["city"]}', '#{opts["state"]}', '#{opts["directions"]}', '#{opts["ada"]}', #{opts["cleanliness"]}, #{opts["staff_friendliness"]})
         RETURNING id, name, address, city, state, directions, ada, cleanliness, staff_friendliness;
       SQL
     )
@@ -90,5 +92,5 @@ class Location
   end
 
 
-  
+
 end

@@ -1,7 +1,7 @@
 
 $sg-lightgrey:  #d7d7d7;
 $sg-teal: #43a88f;
-
+$sg-font: 'Source Sans Pro', sans-serif;
 
 /* GENERAL */
 body, html {
@@ -12,7 +12,6 @@ body, html {
 html {
   height: 100%;
 }
-
 
 body {
   min-height: 100%;
@@ -104,6 +103,7 @@ header {
 /*======= MAIN =======*/
 main {
   margin-bottom: 50px;
+  font-family: $sg-font;
 
 }
 .mainContent {
@@ -116,20 +116,68 @@ main {
 
 /*======= LOCATIONS =======*/
 .locations {
-  border: 1px solid gold;
   width: 45%;
-  height: 500px;
-  overflow: auto;
+  height: 600px;
+  -webkit-box-shadow: -11px 10px 9px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: -11px 10px 9px -9px rgba(0,0,0,0.38);
+  box-shadow: -11px 10px 9px -9px rgba(0,0,0,0.38);
+  border-radius: 3px;
 }
 
+.listTitle {
+  color: $sg-teal;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 3px;
+}
 
+.addBtn {
+  color: $sg-teal;
+  background-color: white;
+  margin-top: 30px;
+  border: none;
+  font-size: 20px;
+}
 
+.addBtn:hover {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.addSearchRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid $sg-lightgrey;
+}
+
+#search {
+    width: 200px;
+}
+
+.locationsTable {
+  overflow: auto;
+  height: 520px;
+}
+
+.locationName:hover {
+  color: $sg-teal;
+  cursor: pointer;
+}
+
+/* ======= MAP ====== */
 .map {
   border: 1px solid gold;
   width: 45%;
   height: 500px;
 }
 
+/*==========Footer========*/
 
 footer {
   position: absolute;
@@ -156,4 +204,5 @@ footer {
 
 /* CREDITS */
 
-/* Logo created at Wix.com  */
+/* Logo created at Wix.com */
+/* Box shadow created at https://www.cssmatic.com/box-shadow */

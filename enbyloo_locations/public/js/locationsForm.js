@@ -78,30 +78,31 @@ class LocationsForm extends React.Component {
               value={this.state.city} />
             <label for="city">City</label>
           </div>
+          <div className="input-field col s6">
+          <input
+            id="state"
+            type="text"
+            className="validate"
+            onChange={this.handleChange}
+            value={this.state.state}/>
+          <label for="state"> State (i.e. CA)</label>
+          </div>
+          </div>
           <div className="row">
             <div className="input-field col s12">
-              <textarea
+              <input
                 id="directions"
+                type='text'
                 className="materialize-textarea"
                 onChange={this.handleChange}
-                value={this.state.directions}>
-                </textarea>
+                value={this.state.directions} />
               <label for="directions">Directions</label>
             </div>
-        </div>
-          <div className="input-field col s6">
-            <input
-              id="state"
-              type="text"
-              className="validate"
-              onChange={this.handleChange}
-              value={this.state.state}/>
-            <label for="state"> State (i.e. CA)</label>
-          </div>
+
         </div>
 
         <div className="row">
-          <div className="input-field col s6">
+          <div className="input-field col s4">
             <input
               id="cleanliness"
               type="text"
@@ -110,7 +111,7 @@ class LocationsForm extends React.Component {
               value={this.state.cleanliness}/>
             <label for="cleanliness"> Cleanliness (1-5)</label>
           </div>
-       <div className="input-field col s6">
+       <div className="input-field col s4">
          <input
           id="staff_friendliness"
           type="text"
@@ -118,6 +119,15 @@ class LocationsForm extends React.Component {
           onChange={this.handleChange}
           value={this.state.staff_friendliness} />
          <label for="staff_friendliness">Friendliness (1-5)</label>
+       </div>
+       <div className="input-field col s4">
+         <input
+           id="ada"
+           className="validate"
+           type='text'
+           onChange={this.handleChange}
+           value={this.state.ada} />
+         <label for="ada">ADA (T/F)</label>
        </div>
      </div>
      <div>

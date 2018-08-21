@@ -1329,3 +1329,595 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:14:45 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 1116ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:15:17 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:16:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:16:25 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 09:16:55 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"test", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"test", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...       VALUES ('test', 'test', 'test', 'te', 'test', , 3, 3)
+                                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:17:05 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/locations/undefined" for 127.0.0.1 at 2018-08-21 09:17:30 -0700
+Processing by LocationsController#update as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"2", "staff_friendliness"=>"2", "id"=>"undefined", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"2", "staff_friendliness"=>"2"}}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ..., city='test', state='ca', directions='test', ada=, cleanlin...
+                                                             ^
+):
+  
+app/models/location.rb:71:in `exec'
+app/models/location.rb:71:in `update'
+app/controllers/locations_controller.rb:26:in `update'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:17:34 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:21:31 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:21:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:22:20 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:22:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:23:16 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:23:27 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:23:41 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:24:03 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:24:13 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:24:25 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:26:15 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:26:51 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:28:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:28:51 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:30:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:31:31 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:32:11 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:34:55 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:38:09 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:38:18 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 25ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:38:24 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:38:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:41:36 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:41:45 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:42:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:42:20 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:44:34 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:44:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:45:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:45:54 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:47:03 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:48:46 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:49:02 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:49:17 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:49:40 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:49:55 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:50:21 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:50:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:50:42 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:50:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:50:58 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:51:32 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:51:57 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:54:40 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:56:08 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:57:41 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 09:58:47 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:00:53 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:07:29 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:07:47 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:07:59 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:08:49 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:09:04 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:09:36 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:09:40 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:10:06 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:10:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:11:11 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:11:32 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:11:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:11:56 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:12:45 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:13:28 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:13:52 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:14:29 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:14:33 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:16:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:16:08 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:16:48 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:17:02 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:17:27 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:17:54 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:29:43 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 49ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:30:43 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 51ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:31:26 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:33:13 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...   VALUES ('terst', 'test', 'test', 'te', 'asdasdg', , 3, 3)
+                                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:34:47 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...   VALUES ('terst', 'test', 'test', 'te', 'asdasdg', , 3, 3)
+                                                                ^
+):
+  
+app/models/location.rb:42:in `exec'
+app/models/location.rb:42:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:35:37 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"terst", "address"=>"test", "city"=>"test", "state"=>"te", "directions"=>"asdasdg", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...   VALUES ('terst', 'test', 'test', 'te', 'asdasdg', , 3, 3)
+                                                                ^
+):
+  
+app/models/location.rb:43:in `exec'
+app/models/location.rb:43:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:39:06 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:40:30 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:41:49 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:42:17 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:42:18 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:43:03 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:43:52 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:45:11 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:45:41 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:45:55 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"t", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"t", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "t" does not exist
+LINE 2: ...    VALUES ('test', 'test', 'test', 'test', 'test', t, 3, 3)
+                                                               ^
+):
+  
+app/models/location.rb:43:in `exec'
+app/models/location.rb:43:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:46:23 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"true", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"true", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::StringDataRightTruncation (ERROR:  value too long for type character varying(2)
+):
+  
+app/models/location.rb:43:in `exec'
+app/models/location.rb:43:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:50:50 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:51:23 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "yes" does not exist
+LINE 2: ...  VALUES ('test', 'test', 'test', 'test', 'test', yes, 3, 3)
+                                                             ^
+):
+  
+app/models/location.rb:43:in `exec'
+app/models/location.rb:43:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:52:11 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"test", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::StringDataRightTruncation (ERROR:  value too long for type character varying(2)
+):
+  
+app/models/location.rb:43:in `exec'
+app/models/location.rb:43:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-21 10:52:46 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"yes", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
