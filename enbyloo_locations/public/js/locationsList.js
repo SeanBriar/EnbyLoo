@@ -1,7 +1,17 @@
 class LocationsList extends React.Component {
   render() {
     return (
-      <div className='locationsTable'>
+      <div>
+        <div className="searchBar">
+         <div className="input-field col s12 searchDiv">
+              <input
+                id="search"
+                type="text"
+                className="validate" />
+                <label for="search"> Search</label>
+          </div>
+        </div>
+        <div className='locationsTable'>
         <table>
           <tbody>
           {this.props.locations.map((location, index)=> {
@@ -15,7 +25,7 @@ class LocationsList extends React.Component {
               </td>
               <td>
                 <div className='deleteBtn'>
-                  <button onClick={()=> this.props.deleteLocation(location, index)}>Delete</button>
+                  <i onClick={()=> this.props.deleteLocation(location, index)} class="material-icons trash">delete_forever</i>
                 </div>
               </td>
               </tr>
@@ -23,6 +33,7 @@ class LocationsList extends React.Component {
           })}
          </tbody>
         </table>
+        </div>
       </div>
     )
   }

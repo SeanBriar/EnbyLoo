@@ -123,22 +123,10 @@ handleUpdateSubmit (location) {
   render() {
     return (
       <div className='locationsList'>
-       <h5 className='listTitle'>Non-Binary Restrooms</h5>
-       <div className='row addSearchRow'>
-
-         <div className="searchBar">
-           {this.state.locationsListIsVisible ? <div className="input-field col s6">
-               <input
-                 id="search"
-                 type="text"
-                 className="validate" />
-                 <label for="search"> Search</label>
-             </div> : ''}
-         </div>
          <div className="add">
-         {this.state.locationsListIsVisible ? <button className='addBtn' onClick={()=>this.toggleState('addLocationIsVisible', 'locationsListIsVisible')}>Add a Location</button> : ''}
+         {this.state.locationsListIsVisible ? <p className='addBtn' onClick={()=>this.toggleState('addLocationIsVisible', 'locationsListIsVisible')}>Add a Location</p> : ''}
          </div>
-        </div>
+
 
        {this.state.locationsListIsVisible ?
          <LocationsList

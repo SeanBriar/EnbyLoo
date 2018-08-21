@@ -96,7 +96,9 @@ main {
 /*======= LOCATIONS =======*/
 .locations {
   width: 45%;
-  height: 600px;
+  height: 600px; }
+
+.locationsList {
   -webkit-box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
   box-shadow: -11px 10px 9px -9px rgba(0, 0, 0, 0.38);
@@ -112,33 +114,45 @@ main {
   padding-top: 5px;
   border-radius: 3px; }
 
+.add {
+  text-align: center;
+  background-color: black;
+  height: 40px;
+  border-radius: 3px; }
+
 .addBtn {
   color: #43a88f;
-  background-color: white;
-  margin-top: 30px;
   border: none;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-top: 5px; }
 
 .addBtn:hover {
-  font-size: 23px;
+  font-size: 22px;
   cursor: pointer; }
 
-.addSearchRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.addRow {
   margin: 0;
-  border-bottom: 1px solid #d7d7d7; }
+  background-color: black; }
 
-#search {
-  width: 200px; }
+.searchBar {
+  padding: 5px; }
+
+.searchDiv {
+  padding-top: 5px;
+  margin: 7px 0px; }
 
 .locationsTable {
   overflow: auto;
-  height: 477px; }
+  height: 460px; }
 
 .locationName:hover {
   color: #43a88f;
+  cursor: pointer; }
+
+.trash {
+  color: #43a88f; }
+
+.trash:hover {
   cursor: pointer; }
 
 /* ======= MAP ====== */
