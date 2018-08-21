@@ -14,7 +14,9 @@ class Locations extends React.Component {
     this.deleteLocation = this.deleteLocation.bind(this)
     this.handleCreate = this.handleCreate.bind(this)
     this.handleCreateSubmit = this.handleCreateSubmit.bind(this)
+    this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
   }
+
 
   toggleState(st1, st2){
     this.setState(
@@ -24,22 +26,37 @@ class Locations extends React.Component {
       })
   }
 
-  // to show one location
-  getLocation(location) {
-    this.setState(
-      {
-        location: location
-      })
-  }
 
+// ============ Update =============
+handleUpdateSubmit (location) {
+    fetch('/locations/'+ location.id, {
+      body: JSON.stringify(location),
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(updatedLocation => {
+        return updatedLocation.json()
+      })
+      .then(jsonedPerson => {
+        //need to update state be naughty, call that db!
+        this.getLocations()
+        this.toggleState('locationsListIsVisible', 'locationIsVisible')
+      })
+      .catch(error => console.log(error))
+
+}
+
+// =========== Create =============
   handleCreate(location){
-    console.log([location, ...this.state.location])
+    console.log([location, ...this.state.locations])
     this.setState(
       {
-        locations: [location, ...this.state.location]
+        locations: [location, ...this.state.locations]
       })
   }
-
 
   handleCreateSubmit(location){
     console.log(location);
@@ -62,6 +79,15 @@ class Locations extends React.Component {
   }
 
 
+// ============= Index/Show =============
+  // to show one location
+  getLocation(location) {
+    this.setState(
+      {
+        location: location
+      })
+    }
+
   // get data from database
   getLocations() {
     fetch('/locations')
@@ -77,6 +103,8 @@ class Locations extends React.Component {
     this.getLocations()
   }
 
+
+// ============== Delete =================
   deleteLocation (location, index) {
   fetch('locations/' + locations.id,
     {
@@ -104,7 +132,8 @@ class Locations extends React.Component {
          <LocationsList
           toggleState={this.toggleState}
           locations={this.state.locations}
-          getLocation={this.getLocation} />
+          getLocation={this.getLocation}
+          deleteLocation={this.deleteLocation} />
         : ''}
 
        {this.state.addLocationIsVisible ?
@@ -118,7 +147,9 @@ class Locations extends React.Component {
          <Location
          toggleState={this.toggleState}
          location={this.state.location}
-         deleteLocation={this.deleteLocation} />
+         handleSubmit={this.handleUpdateSubmit}
+         editLocationIsVisible={this.state.editLocationIsVisible}
+         />
         : ''}
 
       </div>

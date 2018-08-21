@@ -15,6 +15,21 @@ class LocationsForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  componentDidMount() {
+    if(this.props.location){
+      this.setState({
+        name: this.props.location.name,
+        address: this.props.location.address,
+        city: this.props.location.city,
+        state: this.props.location.state,
+        directions: this.props.location.direction,
+        ada: this.props.location.ada,
+        cleanliness: this.props.location.cleanliness,
+        staff_friendliness: this.props.location.staff_friendliness
+      })
+    }
+  }
+
   handleChange (event) {
     this.setState(
       {
@@ -81,7 +96,7 @@ class LocationsForm extends React.Component {
               className="validate"
               onChange={this.handleChange}
               value={this.state.state}/>
-            <label for="state">State (i.e. CA)</label>
+            <label for="state"> State (i.e. CA)</label>
           </div>
         </div>
 
@@ -93,7 +108,7 @@ class LocationsForm extends React.Component {
               className="validate"
               onChange={this.handleChange}
               value={this.state.cleanliness}/>
-            <label for="cleanliness">Cleanliness (1-5)</label>
+            <label for="cleanliness"> Cleanliness (1-5)</label>
           </div>
        <div className="input-field col s6">
          <input
@@ -109,7 +124,13 @@ class LocationsForm extends React.Component {
       <input type='submit' value='Submit' />
     </div>
    </form>
-   <button onClick={()=>this.props.toggleState('locationsListIsVisible', 'addLocationIsVisible')}>Cancel</button>
+     <div className='cancelBtn'>
+     {this.props.editLocationIsVisible ?
+       <button onClick={()=>this.props.toggleState('locationsListIsVisible', 'addLocationIsVisible')}>Cancel</button>
+       :
+       <button className='cancel' onClick={()=> this.props.toggleState('locationsListIsVisible', 'addLocationIsVisible')}>Cancel</button>
+      }
+     </div>
    </div>
     )
   }
