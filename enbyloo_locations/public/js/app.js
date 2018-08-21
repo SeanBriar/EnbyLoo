@@ -106,7 +106,7 @@ handleUpdateSubmit (location) {
 
 // ============== Delete =================
   deleteLocation (location, index) {
-  fetch('locations/' + locations.id,
+  fetch('locations/' + location.id,
     {
       method: 'DELETE'
     })

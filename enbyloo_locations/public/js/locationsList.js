@@ -13,6 +13,11 @@ class LocationsList extends React.Component {
               <td>
               {location.address}, {location.city}, {location.state}
               </td>
+              <td>
+                <div className='deleteBtn'>
+                  <button onClick={()=> this.props.deleteLocation(location, index)}>Delete</button>
+                </div>
+              </td>
               </tr>
             )
           })}

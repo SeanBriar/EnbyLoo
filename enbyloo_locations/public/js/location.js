@@ -14,7 +14,7 @@ class Location extends React.Component {
           <button>Edit</button>
         </div>
         <div className='deleteBtn'>
-          <button onClick={() => this.props.deleteLocation(location, index)}>Delete</button>
+          <button onClick={()=> this.props.deleteLocation(location, index)}>Delete</button>
         </div>
         <LocationsForm location={this.props.person} handleSubmit={this.props.handleSubmit} />
       </div>

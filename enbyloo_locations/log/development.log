@@ -1921,3 +1921,69 @@ Processing by LocationsController#create as HTML
 Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:54:19 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:01 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:12 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:18 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:32 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:46 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:55:58 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 10:56:08 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 11:17:08 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 11:17:53 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 11:20:13 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/locations/15" for 127.0.0.1 at 2018-08-21 11:20:16 -0700
+Processing by LocationsController#delete as */*
+  Parameters: {"id"=>"15"}
+Completed 200 OK in 139ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 11:20:21 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
