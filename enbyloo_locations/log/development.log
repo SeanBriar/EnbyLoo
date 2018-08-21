@@ -799,3 +799,163 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 19ms (Views: 11.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 16:34:58 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 16:35:31 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 16:43:26 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:09:32 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:19:23 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:23:43 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:23:49 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>"", "location"=>{"name"=>"", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>""}}
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:         VALUES ('', '', '', '', '', , , )
+                                            ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:24:08 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:25:13 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:25:47 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"tesaet", "city"=>"asd", "state"=>"ca", "directions"=>"asdiaj;og", "ada"=>"", "cleanliness"=>"5", "staff_friendliness"=>"", "friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"tesaet", "city"=>"asd", "state"=>"ca", "directions"=>"asdiaj;og", "ada"=>"", "cleanliness"=>"5", "staff_friendliness"=>"", "friendliness"=>"3"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...  VALUES ('test', 'tesaet', 'asd', 'ca', 'asdiaj;og', , 5, )
+                                                                 ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:40:10 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 18ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:40:14 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"asdf", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>"", "location"=>{"name"=>"asdf", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>""}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:         VALUES ('asdf', '', '', '', '', , , )
+                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:43:38 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"asdf", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>"", "location"=>{"name"=>"asdf", "address"=>"", "city"=>"", "state"=>"", "directions"=>"", "ada"=>"", "cleanliness"=>"", "staff_friendliness"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:         VALUES ('asdf', '', '', '', '', , , )
+                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:49:04 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:49:22 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"4", "staff_friendliness"=>"3", "location"=>{"name"=>"test", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"4", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...       VALUES ('test', 'test', 'test', 'ca', 'test', , 4, 3)
+                                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:51:36 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"trest", "address"=>"trest", "city"=>"test", "state"=>"test", "directions"=>"tes", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"5", "location"=>{"name"=>"trest", "address"=>"trest", "city"=>"test", "state"=>"test", "directions"=>"tes", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"5"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...    VALUES ('trest', 'trest', 'test', 'test', 'tes', , 3, 5)
+                                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
+Started GET "/locations" for 127.0.0.1 at 2018-08-20 17:54:33 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2018-08-20 17:54:48 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"name"=>"trest", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3", "location"=>{"name"=>"trest", "address"=>"test", "city"=>"test", "state"=>"ca", "directions"=>"test", "ada"=>"", "cleanliness"=>"3", "staff_friendliness"=>"3"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...      VALUES ('trest', 'test', 'test', 'ca', 'test', , 3, 3)
+                                                                ^
+):
+  
+app/models/location.rb:41:in `exec'
+app/models/location.rb:41:in `create'
+app/controllers/locations_controller.rb:16:in `create'
