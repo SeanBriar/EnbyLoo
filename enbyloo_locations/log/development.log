@@ -2292,3 +2292,13 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 1125ms (Views: 927.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 16:04:48 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 702ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 16:15:47 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 22ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+

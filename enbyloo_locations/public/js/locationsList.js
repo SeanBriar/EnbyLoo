@@ -1,5 +1,25 @@
 class LocationsList extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state={
+      search: ''
+    }
+    this.updateSearch = this.updateSearch.bind(this)
+  }
+
+  updateSearch(event){
+    this.setState({
+      search: event.target.value
+    })
+  }
+
   render() {
+    let filteredLocations = this.props.locations.filter(
+      (location)=> {
+        return location.address.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 ||
+        location.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+      }
+    )
     return (
       <div>
         <div className="searchBar">
@@ -7,14 +27,15 @@ class LocationsList extends React.Component {
               <input
                 id="search"
                 type="text"
-                className="validate" />
+                className="validate"
+                onChange={this.updateSearch} />
                 <label for="search"> Search</label>
           </div>
         </div>
         <div className='locationsTable'>
         <table>
           <tbody>
-          {this.props.locations.map((location, index)=> {
+          {filteredLocations.map((location, index)=> {
             return (
               <tr>
               <td className='locationName' onClick={()=> { this.props.getLocation(location); this.props.toggleState('locationsListIsVisible', 'locationIsVisible')}}>
