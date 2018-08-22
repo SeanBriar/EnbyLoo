@@ -36,3 +36,9 @@ INSERT INTO locations (name, address, city, state, directions, ada, cleanliness,
 INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness) VALUES ('Arco AMPM', 'Airport Road and Crossfield Drive', 'Sacramento', 'CA', 'Through the front door on the right wall.', 'yes', 3, 3);
 
 INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness) VALUES ('Valley Hi North Laguna Library', '7400 Imagination Pkwy', 'Sacramento', 'CA', 'Just passed the gendered restroom is an accessible unisex restroom', 'yes', 4, 5);
+
+# yuba city data
+
+INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness) VALUES ('Target', '1153 Butte House Road', 'Yuba City', 'CA', 'Family restroom, as soon as you walk in the door', 'yes', 3, 4);
+
+INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness) VALUES ('Cinemark Yuba City 8', '1410 Whyler Rd', 'Yuba City', 'CA', 'First door on the right, just passed the ticket usher', 'yes', 3, 2);

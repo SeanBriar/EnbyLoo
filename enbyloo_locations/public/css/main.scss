@@ -6,16 +6,6 @@ $sg-font: 'Source Sans Pro', sans-serif;
 /* GENERAL */
 body, html {
   margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  position: relative;
 }
 
 /*======= HEADER ======= */
@@ -151,8 +141,8 @@ li {
 
 /*======= MAIN =======*/
 main {
-  margin-bottom: 50px;
   font-family: $sg-font;
+  margin-bottom: 70px;
 
 }
 .mainContent {
@@ -193,7 +183,8 @@ main {
   height: 200px;
   border-color: white;
   width: 35%;
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .newsletter {
@@ -325,27 +316,22 @@ main {
 }
 
 /*==========Footer========*/
-
 footer {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: black;
   color: $sg-teal;
   text-align: center;
+  margin-top: 20px;
+  .container {
+    padding-top: 15px;
+    a {
+      color: $sg-teal;
+    }
+    img {
+      height: 20px;
+    }
+  }
 }
-
-.createdBy {
-  padding: 20px;
-}
-
-.enbyHeart {
-  height: 20px;
-}
-
 
 
 
