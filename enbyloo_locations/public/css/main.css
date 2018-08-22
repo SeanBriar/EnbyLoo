@@ -14,72 +14,119 @@ body {
 header {
   background-color: black;
   margin: 0;
-  height: 150px; }
+  height: 150px;
+  border-bottom: 3px solid #43a88f; }
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100px;
+  margin-top: 20px; }
 
 .logo {
   padding-top: 15px;
   padding-left: 20px; }
 
-/*======= NAV ======= */
+.resources {
+  color: #d7d7d7;
+  height: 100px; }
+
+.about {
+  border-right: 1px solid #d7d7d7;
+  text-align: right;
+  height: 100px; }
+
+.about, .resources {
+  padding: 0px 10px; }
+
+.resourcesH6 {
+  text-decoration: underline; }
+
+h6 {
+  color: #d7d7d7;
+  margin-bottom: 0px; }
+
+li a {
+  color: #d7d7d7;
+  font-size: 12px; }
+
+li {
+  list-style: none; }
+
+/*======= NAV =======
 .navBar {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   background-color: black;
-  border-top: 3px solid #43a88f; }
+  border-top: 3px solid  $sg-teal;
+}
 
 .nav:hover {
-  background-color: #43a88f; }
-
-/* Dropdown code */
+  background-color: $sg-teal;
+}
+/* Dropdown code
 .navBar a {
   float: left;
   font-size: 16px;
-  color: #d7d7d7;
+  color: $sg-lightgrey;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .dropdown {
   float: left;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
-  color: #d7d7d7;
+  color: $sg-lightgrey;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0; }
+  margin: 0;
+}
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #43a88f; }
+  background-color: $sg-teal;
+}
 
 .dropdownContent {
   display: none;
   position: absolute;
   background-color: black;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-size: 13px; }
+  font-size: 13px;
+}
 
 .dropdownContent a {
   float: none;
-  color: #d7d7d7;
+  color: $sg-lightgrey;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left; }
+  text-align: left;
+}
 
 .dropdownContent a:hover {
-  background-color: #43a88f; }
+  background-color: $sg-teal;
+}
 
 .dropdown:hover .dropdownContent {
-  display: block; }
-
+  display: block;
+}
 /* end of dropdown code */
 /*======= MAIN =======*/
 main {
@@ -139,7 +186,7 @@ main {
 
 .searchDiv {
   padding-top: 5px;
-  margin: 7px 0px; }
+  margin: 10px 0px; }
 
 .locationsTable {
   overflow: auto;

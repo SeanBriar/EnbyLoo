@@ -16,14 +16,14 @@ class LocationsList extends React.Component {
   render() {
     let filteredLocations = this.props.locations.filter(
       (location)=> {
-        return location.address.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 ||
+        return location.city.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 ||
         location.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
       }
     )
     return (
-      <div>
+      <div className='locationBox'>
         <div className="searchBar">
-         <div className="input-field col s12 searchDiv">
+         <div className="input-field col s10 searchDiv">
               <input
                 id="search"
                 type="text"

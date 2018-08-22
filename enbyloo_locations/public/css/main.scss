@@ -23,14 +23,59 @@ header {
  background-color: black;
  margin: 0;
  height: 150px;
+ border-bottom: 3px solid $sg-teal;
 }
 
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100px;
+  margin-top: 20px;
+}
 .logo {
   padding-top: 15px;
   padding-left: 20px;
 }
 
-/*======= NAV ======= */
+.resources {
+  color: $sg-lightgrey;
+  height: 100px;
+}
+
+.about {
+  border-right: 1px solid $sg-lightgrey;
+  text-align: right;
+  height: 100px;
+}
+.about, .resources {
+  padding: 0px 10px;
+}
+
+.resourcesH6 {
+  text-decoration: underline;
+}
+h6 {
+  color:$sg-lightgrey;
+  margin-bottom: 0px;
+ }
+
+li a {
+  color:$sg-lightgrey;
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+/*======= NAV =======
 .navBar {
   display: flex;
   justify-content: flex-end;
@@ -42,7 +87,7 @@ header {
 .nav:hover {
   background-color: $sg-teal;
 }
-/* Dropdown code */
+/* Dropdown code
 .navBar a {
   float: left;
   font-size: 16px;
@@ -168,7 +213,7 @@ main {
 
 .searchDiv {
   padding-top: 5px;
-  margin: 7px 0px;
+  margin: 10px 0px;
 }
 
 .locationsTable {
