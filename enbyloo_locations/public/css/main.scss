@@ -163,6 +163,41 @@ main {
   padding-bottom: 10px;
 }
 
+/*======== Newletter ======== */
+.newsletterDiv {
+  display: flex;
+  width: 85%;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: black;
+  color: $sg-lightgrey;
+  border-radius: 3px;
+  font-weight: $sg-font;
+}
+
+.email {
+  color: $sg-lightgrey;
+}
+
+.newsletter {
+  padding-left: 70px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+.newsletterImage {
+  height: 200px;
+  border-color: white;
+}
+
+.newsletter {
+  p {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
 /*======= LOCATIONS =======*/
 .locations {
   width: 45%;

@@ -41,7 +41,7 @@ handleUpdateSubmit (location) {
       .then(updatedLocation => {
         return updatedLocation.json()
       })
-      .then(jsonedPerson => {
+      .then(jsonedLocation => {
         //need to update state be naughty, call that db!
         this.getLocations()
         this.toggleState('locationsListIsVisible', 'locationIsVisible')

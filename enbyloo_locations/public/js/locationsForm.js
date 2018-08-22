@@ -2,6 +2,7 @@ class LocationsForm extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      id: '',
       name: '',
       address: '',
       city: '',
@@ -18,6 +19,7 @@ class LocationsForm extends React.Component {
   componentDidMount() {
     if(this.props.location){
       this.setState({
+        id: this.props.location.id,
         name: this.props.location.name,
         address: this.props.location.address,
         city: this.props.location.city,
@@ -32,9 +34,7 @@ class LocationsForm extends React.Component {
 
   handleChange (event) {
     this.setState(
-      {
-        [event.target.id]: event.target.value
-      }
+      {[event.target.id]: event.target.value}
     )
   }
 
