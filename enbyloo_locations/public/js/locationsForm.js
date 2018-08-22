@@ -89,15 +89,15 @@ class LocationsForm extends React.Component {
           </div>
           </div>
           <div className="row">
-            <div className="input-field col s12">
-              <input
-                id="directions"
-                type='text'
-                className="materialize-textarea"
-                onChange={this.handleChange}
-                value={this.state.directions} />
-              <label for="directions">Directions</label>
-            </div>
+          <div className="input-field col s12">
+            <input
+              id="directions"
+              type="text"
+              className="validate"
+              onChange={this.handleChange}
+              value={this.state.directions} />
+            <label for="directions">Directions</label>
+          </div>
 
         </div>
 

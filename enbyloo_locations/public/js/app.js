@@ -18,11 +18,12 @@ class Locations extends React.Component {
   }
 
 
-  toggleState(st1, st2){
+  toggleState(st1, st2, st3){
     this.setState(
       {
         [st1]: !this.state[st1],
-        [st2]: !this.state[st2]
+        [st2]: !this.state[st2],
+        [st3]: !this.state[st3]
       })
   }
 
