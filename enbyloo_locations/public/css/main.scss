@@ -166,7 +166,7 @@ main {
 /*======== Newletter ======== */
 .newsletterDiv {
   display: flex;
-  width: 85%;
+  width: 70%;
   height: 200px;
   margin: auto;
   margin-top: 10px;
@@ -176,19 +176,24 @@ main {
   font-weight: $sg-font;
 }
 
+
 .email {
   color: $sg-lightgrey;
 }
 
 .newsletter {
-  padding-left: 70px;
-  font-size: 25px;
   text-align: center;
-  margin: 0;
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
+  width: 65%;
 }
+
 .newsletterImage {
   height: 200px;
   border-color: white;
+  width: 35%;
+  min-width: 200px;
 }
 
 .newsletter {
