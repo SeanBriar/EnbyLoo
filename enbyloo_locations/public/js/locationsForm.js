@@ -52,19 +52,19 @@ class LocationsForm extends React.Component {
             <input
               id="name"
               type="text"
-              className="validate"
+              className="validate active"
               onChange={this.handleChange}
               value={this.state.name}/>
-            <label for="name">Name</label>
+            <label className='active' for="name">Name</label>
           </div>
           <div className="input-field col s6">
             <input
               id="address"
               type="text"
-              className="validate"
+              className="validate active"
               onChange={this.handleChange}
               value={this.state.address} />
-            <label for="address">Address</label>
+            <label className='active' for="address">Address</label>
           </div>
         </div>
 
@@ -73,19 +73,19 @@ class LocationsForm extends React.Component {
             <input
               id="city"
               type="text"
-              className="validate"
+              className="validate active"
               onChange={this.handleChange}
               value={this.state.city} />
-            <label for="city">City</label>
+            <label className='active' for="city">City</label>
           </div>
           <div className="input-field col s6">
             <input
               id="state"
               type="text"
-              className="validate"
+              className="validate active"
               onChange={this.handleChange}
               value={this.state.state}/>
-            <label for="state"> State (i.e. CA)</label>
+            <label className='active' for="state"> State (i.e. CA)</label>
             </div>
           </div>
 
@@ -94,10 +94,10 @@ class LocationsForm extends React.Component {
               <input
                 id="directions"
                 type="text"
-                className="validate"
+                className="validate active"
                 onChange={this.handleChange}
                 value={this.state.directions} />
-              <label for="directions">Directions</label>
+              <label className='active' for="directions">Directions</label>
             </div>
           </div>
 
@@ -107,28 +107,28 @@ class LocationsForm extends React.Component {
             <input
               id="cleanliness"
               type="text"
-              className="validate"
+              className="validate active"
               onChange={this.handleChange}
               value={this.state.cleanliness}/>
-            <label for="cleanliness"> Cleanliness (1-5)</label>
+            <label className='active' for="cleanliness"> Cleanliness (1-5)</label>
           </div>
        <div className="input-field col s4">
          <input
           id="staff_friendliness"
           type="text"
-          className="validate"
+          className="validate active"
           onChange={this.handleChange}
           value={this.state.staff_friendliness} />
-         <label for="staff_friendliness">Friendliness (1-5)</label>
+         <label className='active' for="staff_friendliness">Friendliness (1-5)</label>
        </div>
        <div className="input-field col s4">
          <input
            id="ada"
-           className="validate"
+           className="validate active"
            type='text'
            onChange={this.handleChange}
            value={this.state.ada} />
-         <label for="ada">ADA (T/F)</label>
+         <label className='active' for="ada">ADA (T/F)</label>
        </div>
      </div>
      <div>

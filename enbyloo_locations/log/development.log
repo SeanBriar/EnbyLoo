@@ -2984,3 +2984,23 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:59:04 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:59:54 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:59:56 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 21:00:45 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
