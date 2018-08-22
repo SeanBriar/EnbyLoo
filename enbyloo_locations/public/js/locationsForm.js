@@ -22,7 +22,7 @@ class LocationsForm extends React.Component {
         address: this.props.location.address,
         city: this.props.location.city,
         state: this.props.location.state,
-        directions: this.props.location.direction,
+        directions: this.props.location.directions,
         ada: this.props.location.ada,
         cleanliness: this.props.location.cleanliness,
         staff_friendliness: this.props.location.staff_friendliness
@@ -79,27 +79,28 @@ class LocationsForm extends React.Component {
             <label for="city">City</label>
           </div>
           <div className="input-field col s6">
-          <input
-            id="state"
-            type="text"
-            className="validate"
-            onChange={this.handleChange}
-            value={this.state.state}/>
-          <label for="state"> State (i.e. CA)</label>
-          </div>
-          </div>
-          <div className="row">
-          <div className="input-field col s12">
             <input
-              id="directions"
+              id="state"
               type="text"
               className="validate"
               onChange={this.handleChange}
-              value={this.state.directions} />
-            <label for="directions">Directions</label>
+              value={this.state.state}/>
+            <label for="state"> State (i.e. CA)</label>
+            </div>
           </div>
 
-        </div>
+          <div className="row">
+            <div className="input-field col s12">
+              <input
+                id="directions"
+                type="text"
+                className="validate"
+                onChange={this.handleChange}
+                value={this.state.directions} />
+              <label for="directions">Directions</label>
+            </div>
+          </div>
+
 
         <div className="row">
           <div className="input-field col s4">

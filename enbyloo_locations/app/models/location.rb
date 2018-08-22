@@ -38,8 +38,6 @@ class Location
 
   # CREATE
   def self.create(opts)
-    p '===================================================='
-    p opts
     results = DB.exec(
       <<-SQL
         INSERT INTO locations (name, address, city, state, directions, ada, cleanliness, staff_friendliness)
@@ -70,10 +68,13 @@ class Location
 
   # UPDATE
   def self.update(id, opts)
+    p '===================================================='
+    p opts
+    p id
     results = DB.exec(
       <<-SQL
         UPDATE locations
-        SET name='#{opts["name"]}', address='#{opts["address"]}', city='#{opts["city"]}', state='#{opts["state"]}', directions='#{opts["directions"]}', ada=#{opts["ada"]}, cleanliness=#{opts["cleanliness"]}, staff_friendliness=#{opts["staff_friendliness"]}
+        SET name='#{opts["name"]}', address='#{opts["address"]}', city='#{opts["city"]}', state='#{opts["state"]}', directions='#{opts["directions"]}', ada='#{opts["ada"]}', cleanliness=#{opts["cleanliness"]}, staff_friendliness=#{opts["staff_friendliness"]}
         WHERE id=#{id}
         RETURNING id, name, address, city, state, directions, ada, cleanliness, staff_friendliness;
       SQL

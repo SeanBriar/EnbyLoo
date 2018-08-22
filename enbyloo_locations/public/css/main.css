@@ -196,7 +196,7 @@ main {
   overflow: auto;
   height: 460px; }
 
-.locationName:hover {
+.locationName:hover, .seeFullListIcon:hover {
   color: #43a88f;
   cursor: pointer; }
 
@@ -207,6 +207,32 @@ main {
   cursor: pointer; }
 
 /* ====== Location Show Page ========= */
+.indivLocation {
+  padding: 0px 10px 10px 10px; }
+
+.seeFullListIcon {
+  padding: 5px 0 0 5px; }
+
+.pShowName {
+  font-size: 18px;
+  color: #43a88f;
+  padding-left: 5px; }
+
+.pShow {
+  font-size: 18px;
+  color: #43a88f;
+  padding: 5px; }
+
+.showItem {
+  color: black;
+  font-size: 15px; }
+
+.friendliness {
+  padding-left: 30px; }
+
+.thumb {
+  padding-left: 10px; }
+
 /* ======= MAP ====== */
 .map {
   border: 1px solid gold;

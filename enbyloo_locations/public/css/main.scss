@@ -198,7 +198,6 @@ main {
   border: none;
   font-size: 20px;
   padding-top: 5px;
-
 }
 
 .addBtn:hover {
@@ -225,7 +224,7 @@ main {
   height: 460px;
 }
 
-.locationName:hover {
+.locationName:hover, .seeFullListIcon:hover {
   color: $sg-teal;
   cursor: pointer;
 }
@@ -234,14 +233,42 @@ main {
   color: $sg-teal;
 }
 
-.editBtn:hover, .trash:hover {
+.editBtn:hover, .trash:hover, {
   cursor: pointer;
 }
 
 
 /* ====== Location Show Page ========= */
+.indivLocation {
+  padding: 0px 10px 10px 10px;
+}
 
+.seeFullListIcon {
+  padding: 5px 0 0 5px;
+}
 
+.pShowName {
+  font-size: 18px;
+  color: $sg-teal;
+  padding-left: 5px;
+}
+.pShow {
+  font-size: 18px;
+  color: $sg-teal;
+  padding: 5px;
+}
+
+.showItem {
+  color: black;
+  font-size: 15px;
+}
+
+.friendliness {
+  padding-left: 30px;
+}
+.thumb {
+ padding-left: 10px;
+}
 
 /* ======= MAP ====== */
 .map {

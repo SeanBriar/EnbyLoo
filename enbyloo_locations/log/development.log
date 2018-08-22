@@ -2679,3 +2679,308 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:17:57 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:18:51 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:21:13 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/locations/undefined" for 127.0.0.1 at 2018-08-21 19:21:27 -0700
+Processing by LocationsController#update as HTML
+  Parameters: {"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sacramento", "state"=>"CA", "directions"=>"In the back, you must be 18", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2, "id"=>"undefined", "location"=>{"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sacramento", "state"=>"CA", "directions"=>"In the back, you must be 18", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "undefined" does not exist
+LINE 3:         WHERE id=undefined
+                         ^
+):
+  
+app/models/location.rb:73:in `exec'
+app/models/location.rb:73:in `update'
+app/controllers/locations_controller.rb:26:in `update'
+Started PUT "/locations/undefined" for 127.0.0.1 at 2018-08-21 19:22:29 -0700
+Processing by LocationsController#update as HTML
+  Parameters: {"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sacramento", "state"=>"CA", "directions"=>"In the back, you must be 18", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2, "id"=>"undefined", "location"=>{"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sacramento", "state"=>"CA", "directions"=>"In the back, you must be 18", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "undefined" does not exist
+LINE 3:         WHERE id=undefined
+                         ^
+):
+  
+app/models/location.rb:73:in `exec'
+app/models/location.rb:73:in `update'
+app/controllers/locations_controller.rb:26:in `update'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:22:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/locations/undefined" for 127.0.0.1 at 2018-08-21 19:22:43 -0700
+Processing by LocationsController#update as HTML
+  Parameters: {"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sac", "state"=>"CA", "directions"=>"In the back, you must be 21", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2, "id"=>"undefined", "location"=>{"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sac", "state"=>"CA", "directions"=>"In the back, you must be 21", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "undefined" does not exist
+LINE 3:         WHERE id=undefined
+                         ^
+):
+  
+app/models/location.rb:73:in `exec'
+app/models/location.rb:73:in `update'
+app/controllers/locations_controller.rb:26:in `update'
+Started PUT "/locations/undefined" for 127.0.0.1 at 2018-08-21 19:25:35 -0700
+Processing by LocationsController#update as HTML
+  Parameters: {"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sac", "state"=>"CA", "directions"=>"In the back, you must be 21", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2, "id"=>"undefined", "location"=>{"name"=>"Painted Cork", "address"=>"1624 J Street", "city"=>"Sac", "state"=>"CA", "directions"=>"In the back, you must be 21", "ada"=>"yes", "cleanliness"=>4, "staff_friendliness"=>2}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "undefined" does not exist
+LINE 3:         WHERE id=undefined
+                         ^
+):
+  
+app/models/location.rb:74:in `exec'
+app/models/location.rb:74:in `update'
+app/controllers/locations_controller.rb:26:in `update'
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:32:40 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:33:31 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:33:47 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:35:27 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:35:39 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:36:06 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:45:41 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:46:00 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:46:24 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:47:22 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:48:29 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:48:44 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:50:14 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:51:24 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:54:49 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:56:47 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:57:09 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 19:59:58 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:26:21 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:26:36 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:28:18 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 22ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:31:02 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:31:43 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:32:57 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:33:26 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:34:04 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 19ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:37:11 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:38:51 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 12ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:39:56 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:40:24 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:41:04 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:41:10 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:41:26 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:47:14 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:47:37 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:48:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:50:43 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:52:15 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:52:51 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:53:30 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:53:58 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:54:48 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:55:35 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:55:42 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2018-08-21 20:56:05 -0700
+Processing by LocationsController#index as */*
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
