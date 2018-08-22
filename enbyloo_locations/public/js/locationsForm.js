@@ -136,7 +136,7 @@ class LocationsForm extends React.Component {
    </form>
      <div className='cancelBtn'>
      {this.props.editLocationIsVisible ?
-       <button onClick={()=>this.props.toggleState('locationsListIsVisible', 'addLocationIsVisible')}>Cancel</button>
+       <button onClick={()=>this.props.toggleState('locationsListIsVisible', 'editLocationIsVisible', 'addLocationIsVisible')}>Cancel</button>
        :
        <button className='cancel' onClick={()=> this.props.toggleState('locationsListIsVisible', 'addLocationIsVisible')}>Cancel</button>
       }

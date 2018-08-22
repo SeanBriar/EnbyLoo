@@ -49,6 +49,11 @@ class LocationsList extends React.Component {
                   <i onClick={()=> this.props.deleteLocation(location, index)} class="material-icons trash">delete_forever</i>
                 </div>
               </td>
+              <td>
+                <div className='editBtn'>
+                <i className="material-icons" onClick={() => {this.props.getLocation(location); this.props.toggleState('locationIsVisible', 'locationsListIsVisible', 'editLocationIsVisible')}}>edit</i>
+                </div>
+              </td>
               </tr>
             )
           })}

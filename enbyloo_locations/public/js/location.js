@@ -10,13 +10,13 @@ class Location extends React.Component {
           <p>Friendliness Rating: {this.props.location.staff_friendliness}</p>
           <p>ADA Complacent: {this.props.location.ada}</p>
         </div>
-        <div className='editBtn'>
-          <button>Edit</button>
-        </div>
-        <div className='deleteBtn'>
-          <button onClick={()=> this.props.deleteLocation(location, index)}>Delete</button>
-        </div>
-        <LocationsForm location={this.props.person} handleSubmit={this.props.handleSubmit} />
+        {this.props.editLocationIsVisible ?
+          <LocationsForm
+            location={this.props.location}
+            handleSubmit={this.props.handleSubmit}
+            editLocationIsVisible={this.props.editLocationIsVisible}
+            toggleState={this.props.toggleState}/>
+            : '' }
       </div>
     )
   }

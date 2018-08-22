@@ -66,6 +66,10 @@ h6 {
   margin-bottom: 0px;
  }
 
+h6:hover {
+  color: $sg-teal;
+  cursor: pointer;
+}
 li a {
   color:$sg-lightgrey;
   font-size: 12px;
@@ -226,13 +230,19 @@ main {
   cursor: pointer;
 }
 
-.trash {
+.trash, .editBtn {
   color: $sg-teal;
 }
 
-.trash:hover {
+.editBtn:hover, .trash:hover {
   cursor: pointer;
 }
+
+
+/* ====== Location Show Page ========= */
+
+
+
 /* ======= MAP ====== */
 .map {
   border: 1px solid gold;

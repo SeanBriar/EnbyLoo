@@ -140,7 +140,8 @@ handleUpdateSubmit (location) {
          <LocationsForm
          toggleState={this.toggleState}
          handleCreate={this.handleCreate}
-         handleSubmit={this.handleCreateSubmit}/>
+         handleSubmit={this.handleCreateSubmit}
+         editLocationIsVisible={this.state.editLocationIsVisible}/>
         : ''}
 
        {this.state.locationIsVisible ?

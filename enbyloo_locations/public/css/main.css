@@ -52,6 +52,10 @@ h6 {
   color: #d7d7d7;
   margin-bottom: 0px; }
 
+h6:hover {
+  color: #43a88f;
+  cursor: pointer; }
+
 li a {
   color: #d7d7d7;
   font-size: 12px; }
@@ -196,12 +200,13 @@ main {
   color: #43a88f;
   cursor: pointer; }
 
-.trash {
+.trash, .editBtn {
   color: #43a88f; }
 
-.trash:hover {
+.editBtn:hover, .trash:hover {
   cursor: pointer; }
 
+/* ====== Location Show Page ========= */
 /* ======= MAP ====== */
 .map {
   border: 1px solid gold;
